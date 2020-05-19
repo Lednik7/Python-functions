@@ -36,3 +36,8 @@ int index(vector<int> &a, int b) {
 		}
 	} return j;
 }
+
+double num(string str){
+	return atof (str.c_str());
+}
+
