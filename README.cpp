@@ -1,9 +1,9 @@
 # python_func
 c++
 
-vector <int> slice(vector<int> &a, int start, int stop) {
-	vector <int> ret(stop - start);
-	for (int i = 0; i < stop - start; i++) ret[i] = a[start + i];
+vector <int> slice(vector<int> &a, int start, int stop, int step = 1) {
+	vector <int> ret(0);
+	for (int i = 0; i < (stop - start); i+=step) ret.push_back(a[start + i]);
 	return ret;
 }
 
