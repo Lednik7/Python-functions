@@ -1,5 +1,13 @@
-# python_func
-c++
+//python_func
+//c++
+	
+#include<iostream> 
+#include <vector>
+#include <string> 
+#include <algorithm>  
+#include <array> 
+using namespace std;
+
 vector <int> slice(vector<int> a, int start, int stop, int step = 1) {
 	vector <int> ret(0);
 	for (int i = 0; i < (stop - start); i+=step) ret.push_back(a[start + i]);
@@ -35,4 +43,20 @@ int index(vector<int> a, int b) {
 
 double num(string str){
 	return atof (str.c_str());
+}
+
+
+int main() {
+	int b;
+	cin >> b;
+	vector <int> base(b);
+
+	for (int i = 0; i < b; i++) {
+		cin >> base[i];
+	}
+	
+	for (auto c : base) cout << c << " ";
+	
+	system("pause");
+	return 0;
 }
