@@ -1,21 +1,17 @@
 # python_func
 c++
-
-vector <int> slice(vector<int> &a, int start, int stop, int step = 1) {
+vector <int> slice(vector<int> a, int start, int stop, int step = 1) {
 	vector <int> ret(0);
 	for (int i = 0; i < (stop - start); i+=step) ret.push_back(a[start + i]);
 	return ret;
 }
 
-vector <int> twist(vector<int> &a) {
-	vector <int> ret(a.size());
-	ret = a;
+vector <int> twist(vector<int> ret) {
 	reverse(ret.begin(), ret.end());
 	return ret;
 }
 
-vector <int> sorted(vector<int> &a) {
-	vector <int> ret = a;
+vector <int> sorted(vector<int> ret) {
 	for (int i = 1; i < int (ret.size()); ++i) {
 		int tmp = ret[i];
 		int j = i - 1;
@@ -27,7 +23,7 @@ vector <int> sorted(vector<int> &a) {
 	} return ret;
 }
 
-int index(vector<int> &a, int b) {
+int index(vector<int> a, int b) {
 	int j = -1;
 	for (int i = 0; i < int (a.size()); ++i) {
 		if (a[i] == b) {
@@ -40,4 +36,3 @@ int index(vector<int> &a, int b) {
 double num(string str){
 	return atof (str.c_str());
 }
-
