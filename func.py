@@ -1,8 +1,6 @@
 def slice(a, start, stop, step=1):
-    a = a[:]
-    c = []
     i = 0
-    
+    a = a[:]
     if step == -1:
         a.reverse()
         return a
@@ -11,6 +9,7 @@ def slice(a, start, stop, step=1):
         a.reverse()
         step=abs(step)
         
+    c = []
     while (i < stop - start):
         c.append(a[start + i])
         i+=step
