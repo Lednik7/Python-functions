@@ -1,4 +1,0 @@
-//python_func
-//c++
-	
-
