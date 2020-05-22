@@ -12,7 +12,6 @@ def slice(a, start, stop, step=1):
         step=abs(step)
         
     while (i < stop - start):
-        print(i)
         c.append(a[start + i])
         i+=step
     return c
