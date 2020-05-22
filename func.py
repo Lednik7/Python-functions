@@ -8,7 +8,7 @@ def slice(a, start, stop, step=1):
         return a
         
     elif step < 0:
-        n.reverse()
+        a.reverse()
         step=abs(step)
         
     while (i < stop - start):
